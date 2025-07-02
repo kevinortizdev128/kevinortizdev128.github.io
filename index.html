@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Ortiz - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .project {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        
+        .project h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .project p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .project a {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .project a:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kevin Ortiz</h1>
+            <p class="subtitle">Desarrollador Full Stack</p>
+        </header>
+        
+        <div class="projects">
+            <div class="project">
+                <h3>📚 Sistema de Biblioteca</h3>
+                <p>Sistema completo para gestión de libros con funcionalidades CRUD.</p>
+                <a href="libreria/libreria.html">Ver Proyecto</a>
+            </div>
+            
+            <div class="project">
+                <h3>🐕 Registro de Mascotas</h3>
+                <p>Aplicación web para el registro y gestión de mascotas.</p>
+                <a href="mascotas/mascotas.html">Ver Proyecto</a>
+            </div>
+            
+            <div class="project">
+                <h3>🎓 EduWeb</h3>
+                <p>Plataforma educativa con recursos interactivos.</p>
+                <a href="eduweb/EduWeb.html">Ver Proyecto</a>
+            </div>
+            
+            <div class="project">
+                <h3>🗄️ Bases de Datos</h3>
+                <p>Colección de scripts SQL para diferentes sistemas.</p>
+                <a href="sql/index.html">Ver Scripts</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Kevin Ortiz - GitHub: kevinortizdev128</p>
+        </footer>
+    </div>
+</body>
+</html>

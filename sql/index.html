@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts SQL - Kevin Ortiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        header h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+        
+        .scripts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .script-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 4px solid #2c3e50;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .script-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .script-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .script-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .script-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .script-card a {
+            display: inline-block;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .script-card a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .back-btn {
+                position: static;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            
+            .scripts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗄️ Scripts SQL</h1>
+            <a href="../index.html" class="back-btn">← Volver al Portfolio</a>
+        </header>
+        
+        <div class="scripts-grid">
+            <div class="script-card">
+                <h3>👥 Sistema de Amigos</h3>
+                <p>Base de datos para gestión de amigos con categorías y géneros.</p>
+                <div class="script-meta">
+                    <span>📊 5 tablas</span>
+                    <span>📝 15 registros</span>
+                </div>
+                <a href="amigos.sql" download>Descargar SQL</a>
+            </div>
+            
+            <div class="script-card">
+                <h3>🏫 Sistema de Colegio</h3>
+                <p>Gestión académica con estudiantes, profesores y materias.</p>
+                <div class="script-meta">
+                    <span>📊 6 tablas</span>
+                    <span>📝 20 registros</span>
+                </div>
+                <a href="colegio.sql" download>Descargar SQL</a>
+            </div>
+            
+            <div class="script-card">
+                <h3>🏢 Sistema de Empresa</h3>
+                <p>Base de datos empresarial con empleados y proyectos.</p>
+                <div class="script-meta">
+                    <span>📊 4 tablas</span>
+                    <span>📝 12 registros</span>
+                </div>
+                <a href="empresa.sql" download>Descargar SQL</a>
+            </div>
+            
+            <div class="script-card">
+                <h3>💇 Sistema de Peluquería</h3>
+                <p>Gestión de citas, clientes y servicios de peluquería.</p>
+                <div class="script-meta">
+                    <span>📊 4 tablas</span>
+                    <span>📝 18 registros</span>
+                </div>
+                <a href="peluqueria.sql" download>Descargar SQL</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

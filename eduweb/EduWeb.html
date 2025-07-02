@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduWeb - Plataforma Educativa</title>
+    <link rel="stylesheet" href="EduWeb.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🎓 EduWeb</h2>
+            </div>
+            <a href="../index.html" class="back-btn">← Portfolio</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bienvenido a EduWeb</h1>
+                <p>Tu plataforma educativa integral para el aprendizaje en línea</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3 id="totalCourses">12</h3>
+                        <p>Cursos Disponibles</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="activeStudents">0</h3>
+                        <p>Estudiantes Activos</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="contentHours">156</h3>
+                        <p>Horas de Contenido</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="students-section">
+            <div class="section-header">
+                <h2>Registro de Estudiantes</h2>
+            </div>
+            
+            <div class="form-container">
+                <form id="studentForm">
+                    <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    <input type="number" id="edad" placeholder="Edad" min="16" max="100" required>
+                    <select id="curso" required>
+                        <option value="">Seleccionar curso</option>
+                        <option value="Desarrollo Web">💻 Desarrollo Web</option>
+                        <option value="Python para Principiantes">🐍 Python para Principiantes</option>
+                        <option value="Análisis de Datos">📊 Análisis de Datos</option>
+                        <option value="JavaScript Avanzado">⚡ JavaScript Avanzado</option>
+                        <option value="React Fundamentals">⚛️ React Fundamentals</option>
+                        <option value="Node.js Backend">🟢 Node.js Backend</option>
+                    </select>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <button type="submit">Registrar Estudiante</button>
+                </form>
+            </div>
+            
+            <div class="filter-container">
+                <input type="text" id="searchStudents" placeholder="Buscar estudiantes...">
+                <select id="courseFilter">
+                    <option value="">Todos los cursos</option>
+                    <option value="Desarrollo Web">💻 Desarrollo Web</option>
+                    <option value="Python para Principiantes">🐍 Python para Principiantes</option>
+                    <option value="Análisis de Datos">📊 Análisis de Datos</option>
+                    <option value="JavaScript Avanzado">⚡ JavaScript Avanzado</option>
+                    <option value="React Fundamentals">⚛️ React Fundamentals</option>
+                    <option value="Node.js Backend">🟢 Node.js Backend</option>
+                </select>
+                <button onclick="filterStudents()">🔍 Filtrar</button>
+                <button onclick="showAllStudents()">Ver Todos</button>
+            </div>
+            
+            <div class="students-table-container">
+                <h3>Estudiantes Registrados (<span id="totalCount">0</span>)</h3>
+                <div class="table-wrapper">
+                    <table id="studentsTable">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Curso</th>
+                                <th>Email</th>
+                                <th>Fecha Registro</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <h2>Cursos Populares</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">💻</div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Aprende HTML, CSS y JavaScript desde cero hasta nivel avanzado</p>
+                    <div class="course-meta">
+                        <span>⏱️ 40 horas</span>
+                        <span>👥 234 estudiantes</span>
+                        <span>⭐ 4.8/5</span>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                        <span>85% completado</span>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">🐍</div>
+                    <h3>Python para Principiantes</h3>
+                    <p>Fundamentos de programación con Python y sus aplicaciones</p>
+                    <div class="course-meta">
+                        <span>⏱️ 35 horas</span>
+                        <span>👥 189 estudiantes</span>
+                        <span>⭐ 4.7/5</span>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span>60% completado</span>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">📊</div>
+                    <h3>Análisis de Datos</h3>
+                    <p>Visualización y análisis con herramientas modernas como Pandas</p>
+                    <div class="course-meta">
+                        <span>⏱️ 28 horas</span>
+                        <span>👥 156 estudiantes</span>
+                        <span>⭐ 4.9/5</span>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%"></div>
+                        </div>
+                        <span>40% completado</span>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">⚡</div>
+                    <h3>JavaScript Avanzado</h3>
+                    <p>Conceptos avanzados de JavaScript y programación asíncrona</p>
+                    <div class="course-meta">
+                        <span>⏱️ 45 horas</span>
+                        <span>👥 198 estudiantes</span>
+                        <span>⭐ 4.6/5</span>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <span>75% completado</span>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">⚛️</div>
+                    <h3>React Fundamentals</h3>
+                    <p>Construye aplicaciones web modernas con React y sus hooks</p>
+                    <div class="course-meta">
+                        <span>⏱️ 32 horas</span>
+                        <span>👥 167 estudiantes</span>
+                        <span>⭐ 4.8/5</span>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 55%"></div>
+                        </div>
+                        <span>55% completado</span>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">🟢</div>
+                    <h3>Node.js Backend</h3>
+                    <p>Desarrollo de APIs y servicios backend con Node.js y Express</p>
+                    <div class="course-meta">
+                        <span>⏱️ 38 horas</span>
+                        <span>👥 143 estudiantes</span>
+                        <span>⭐ 4.7/5</span>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%"></div>
+                        </div>
+                        <span>30% completado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="EduWeb.js"></script>
+</body>
+</html>

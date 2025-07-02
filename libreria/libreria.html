@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Biblioteca</title>
+    <link rel="stylesheet" href="libreria.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Sistema de Biblioteca</h1>
+            <p>Gestión completa de libros y préstamos</p>
+            <a href="../index.html" class="back-btn">← Volver al Portfolio</a>
+        </header>
+        
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="showTab('agregar')">Agregar Libro</button>
+            <button class="tab-btn" onclick="showTab('buscar')">Buscar</button>
+            <button class="tab-btn" onclick="showTab('prestamos')">Préstamos</button>
+            <button class="tab-btn" onclick="showTab('inventario')">Inventario</button>
+        </nav>
+        
+        <div id="agregar" class="tab-content active">
+            <h2>Agregar Nuevo Libro</h2>
+            <form id="bookForm">
+                <input type="text" id="title" placeholder="Título del libro" required>
+                <input type="text" id="author" placeholder="Autor" required>
+                <input type="number" id="year" placeholder="Año de publicación" required>
+                <input type="text" id="isbn" placeholder="ISBN (opcional)">
+                <button type="submit">Agregar Libro</button>
+            </form>
+        </div>
+        
+        <div id="buscar" class="tab-content">
+            <h2>Buscar Libros</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar por título, autor o ISBN...">
+                <button onclick="buscarLibros()">🔍 Buscar</button>
+                <button onclick="showAllBooks()">Ver Todos</button>
+            </div>
+            <div id="resultados-busqueda"></div>
+        </div>
+        
+        <div id="prestamos" class="tab-content">
+            <h2>Gestión de Préstamos</h2>
+            <div class="prestamo-form">
+                <h3>Nuevo Préstamo</h3>
+                <form id="form-prestamo">
+                    <div class="form-group">
+                        <label for="libro-prestamo">Libro:</label>
+                        <select id="libro-prestamo" required>
+                            <option value="">Seleccionar libro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-prestamo">Fecha de Préstamo:</label>
+                        <input type="date" id="fecha-prestamo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-devolucion">Fecha de Devolución:</label>
+                        <input type="date" id="fecha-devolucion" required>
+                    </div>
+                    <button type="submit">Registrar Préstamo</button>
+                </form>
+            </div>
+            <div id="lista-prestamos"></div>
+        </div>
+        
+        <div id="inventario" class="tab-content">
+            <h2>Inventario de Libros</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3 id="total-libros">0</h3>
+                    <p>Total de Libros</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="libros-disponibles">0</h3>
+                    <p>Disponibles</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="libros-prestados">0</h3>
+                    <p>Prestados</p>
+                </div>
+            </div>
+            <div class="table-section">
+                <h2>Libros Registrados (<span id="bookCount">0</span>)</h2>
+                <div class="table-container">
+                    <table id="booksTable">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Autor</th>
+                                <th>Año</th>
+                                <th>ISBN</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="libreria.js"></script>
+</body>
+</html>

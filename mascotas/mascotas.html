@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mascotas</title>
+    <link rel="stylesheet" href="mascotas.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐕 Registro de Mascotas</h1>
+            <a href="../index.html" class="back-btn">← Volver al Portfolio</a>
+        </header>
+        
+        <div class="form-section">
+            <h2>Registrar Nueva Mascota</h2>
+            <form id="petForm">
+                <input type="text" id="name" placeholder="Nombre de la mascota" required>
+                <select id="species" required>
+                    <option value="">Seleccionar especie</option>
+                    <option value="perro">🐕 Perro</option>
+                    <option value="gato">🐱 Gato</option>
+                    <option value="ave">🐦 Ave</option>
+                    <option value="pez">🐠 Pez</option>
+                    <option value="hamster">🐹 Hámster</option>
+                    <option value="conejo">🐰 Conejo</option>
+                    <option value="reptil">🦎 Reptil</option>
+                    <option value="otro">🐾 Otro</option>
+                </select>
+                <input type="text" id="breed" placeholder="Raza" required>
+                <input type="number" id="age" placeholder="Edad (años)" min="0" max="30" required>
+                <input type="text" id="owner" placeholder="Nombre del dueño" required>
+                <input type="tel" id="phone" placeholder="Teléfono de contacto" required>
+                <button type="submit">Registrar Mascota</button>
+            </form>
+        </div>
+        
+        <div class="filter-section">
+            <h2>Filtrar Mascotas</h2>
+            <div class="filter-container">
+                <input type="text" id="searchInput" placeholder="Buscar por nombre, dueño o raza...">
+                <select id="speciesFilter">
+                    <option value="">Todas las especies</option>
+                    <option value="perro">🐕 Perros</option>
+                    <option value="gato">🐱 Gatos</option>
+                    <option value="ave">🐦 Aves</option>
+                    <option value="pez">🐠 Peces</option>
+                    <option value="hamster">🐹 Hámsters</option>
+                    <option value="conejo">🐰 Conejos</option>
+                    <option value="reptil">🦎 Reptiles</option>
+                    <option value="otro">🐾 Otros</option>
+                </select>
+                <button onclick="filterPets()">🔍 Filtrar</button>
+                <button onclick="showAllPets()">Ver Todas</button>
+            </div>
+        </div>
+        
+        <div class="pets-section">
+            <h2>Mascotas Registradas (<span id="petCount">0</span>)</h2>
+            <div id="petsList"></div>
+        </div>
+    </div>
+    
+    <script src="mascotas.js"></script>
+</body>
+</html>
