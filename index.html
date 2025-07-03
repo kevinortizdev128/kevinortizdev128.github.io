@@ -102,17 +102,18 @@
   </header>
 
   <section class="projects">
+    <!-- Librería (con modal) -->
     <div class="card" data-aos="zoom-in" data-aos-delay="100">
       <span class="icon">📖</span>
       <h2>Librería</h2>
       <p>App web para gestión de libros y autores.</p>
       <small>Tecnologías: HTML, CSS, JS</small>
       <br>
-      <!-- Botón que abre el modal -->
       <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalLibreria">
         Ver código
       </button>
     </div>
+    <!-- Mascotas -->
     <div class="card" data-aos="zoom-in" data-aos-delay="200">
       <span class="icon">🐾</span>
       <h2>Mascotas</h2>
@@ -121,6 +122,7 @@
       <br>
       <a href="./mascotas" target="_blank" class="btn btn-primary mt-2">Ver código</a>
     </div>
+    <!-- EduWeb -->
     <div class="card" data-aos="zoom-in" data-aos-delay="300">
       <span class="icon">🌐</span>
       <h2>EduWeb</h2>
@@ -129,6 +131,7 @@
       <br>
       <a href="./eduweb" target="_blank" class="btn btn-primary mt-2">Ver código</a>
     </div>
+    <!-- Bases de datos -->
     <div class="card" data-aos="zoom-in" data-aos-delay="400">
       <span class="icon">🗄️</span>
       <h2>Bases de Datos</h2>
@@ -137,6 +140,7 @@
       <br>
       <a href="./proyectos%20bases%20de%20datos" target="_blank" class="btn btn-primary mt-2">Ver código</a>
     </div>
+    <!-- Java -->
     <div class="card" data-aos="zoom-in" data-aos-delay="500">
       <span class="icon">☕</span>
       <h2>Java</h2>
@@ -145,6 +149,7 @@
       <br>
       <a href="./proyectos%20programacion" target="_blank" class="btn btn-primary mt-2">Ver código</a>
     </div>
+    <!-- SQL sueltos -->
     <div class="card" data-aos="zoom-in" data-aos-delay="600">
       <span class="icon">🗃️</span>
       <h2>SQL (sueltos)</h2>
@@ -153,6 +158,7 @@
       <br>
       <a href="./sql" target="_blank" class="btn btn-primary mt-2">Ver código</a>
     </div>
+    <!-- index.html -->
     <div class="card" data-aos="zoom-in" data-aos-delay="700">
       <span class="icon">🏠</span>
       <h2>index.html</h2>
@@ -201,6 +207,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({ duration: 900, once: true });
+    // Solución: cierra el modal si el usuario navega hacia atrás
+    window.addEventListener('popstate', function() {
+      var modals = document.querySelectorAll('.modal.show');
+      modals.forEach(function(modal) {
+        var modalInstance = bootstrap.Modal.getInstance(modal);
+        if (modalInstance) {
+          modalInstance.hide();
+        }
+      });
+    });
   </script>
 </body>
 </html>
