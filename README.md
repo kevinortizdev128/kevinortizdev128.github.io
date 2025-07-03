@@ -11,7 +11,7 @@ Bienvenido a mi portafolio. Aquí encontrarás una selección de mis proyectos r
 - [EduWeb](#eduweb)
 - [Proyectos de Bases de Datos](#proyectos-de-bases-de-datos)
 - [Proyectos de Programación (Java)](#proyectos-de-programación-java)
-- [SQL (scripts sueltos)](#sql-scripts-sueltos)
+- [SQL (scripts)](#sql-scripts-sueltos)
 - [index.html (Página principal)](#indexhtml-página-principal)
 
 ---
