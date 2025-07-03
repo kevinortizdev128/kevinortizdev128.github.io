@@ -4,89 +4,153 @@
   <meta charset="UTF-8">
   <title>Portafolio de Kevin Ortiz Chaves</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Animate.css para animaciones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- AOS para animaciones al hacer scroll -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
   <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(120deg, #f2f2f2 0%, #e0e7ff 100%); margin: 0; padding: 0; min-height: 100vh; }
-    header { background: #4f46e5; color: #fff; padding: 2rem 0 1rem; text-align: center; }
-    .main-title { font-size: 2.5rem; margin-bottom: 0.3em; }
-    .subtitle { font-size: 1.3rem; margin-bottom: 0.3em; color: #c7d2fe; }
-    .projects { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 2rem 0; }
-    .card { background: #fff; border-radius: 1.2rem; box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07); width: 320px; padding: 2rem 1.5rem; transition: transform 0.25s, box-shadow 0.25s; cursor: pointer; position: relative; overflow: hidden; }
-    .card:hover { transform: scale(1.045) translateY(-4px); box-shadow: 0 10px 32px 0 rgba(79,70,229,0.13); }
-    .card h2 { margin: 0 0 0.5em; color: #4f46e5; }
-    .card .icon { font-size: 2.2em; margin-bottom: 0.4em; display: block; animation: pulse 1.2s infinite alternate; }
-    @keyframes pulse { to { transform: scale(1.07);} }
-    .card img { width: 100%; border-radius: 10px; margin-bottom: 8px; box-shadow: 0 1px 8px #8882; object-fit: cover; }
-    .contact { background: #312e81; color: #fff; padding: 2rem 0; text-align: center; margin-top: 2rem; }
-    .contact a { color: #a5b4fc; text-decoration: none; font-weight: bold; margin: 0 0.5em; transition: color 0.2s; }
-    .contact a:hover { color: #fff; text-decoration: underline; }
-    @media (max-width: 700px) { .projects { flex-direction: column; align-items: center;} .card { width: 94vw;} }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #f2f2f2 0%, #e0e7ff 100%);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    header {
+      background: #4f46e5;
+      color: #fff;
+      padding: 2rem 0 1rem;
+      text-align: center;
+    }
+    .main-title {
+      font-size: 2.5rem;
+      margin-bottom: 0.3em;
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 0.3em;
+      color: #c7d2fe;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .card {
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+      width: 320px;
+      padding: 2rem 1.5rem;
+      transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: scale(1.045) translateY(-4px);
+      box-shadow: 0 10px 32px 0 rgba(79,70,229,0.13);
+    }
+    .card h2 {
+      margin: 0 0 0.5em;
+      color: #4f46e5;
+    }
+    .card .icon {
+      font-size: 2.2em;
+      margin-bottom: 0.4em;
+      display: block;
+      animation: pulse 1.2s infinite alternate;
+    }
+    @keyframes pulse {
+      to { transform: scale(1.07);}
+    }
+    .contact {
+      background: #312e81;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .contact a {
+      color: #a5b4fc;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 0.5em;
+      transition: color 0.2s;
+    }
+    .contact a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      .projects { flex-direction: column; align-items: center;}
+      .card { width: 94vw;}
+    }
   </style>
 </head>
 <body>
   <header class="animate__animated animate__fadeInDown">
     <div class="main-title">Portafolio de Proyectos de Desarrollo de Software</div>
-    <div class="subtitle">Kevin Ortiz Chaves ï HTML ï CSS ï JavaScript ï Java ï SQL</div>
-    <div class="subtitle" style="font-size:1.1rem;">Proyectos universitarios y personales con buenas pr·cticas</div>
+    <div class="subtitle">Kevin Ortiz Chaves ‚Ä¢ HTML ‚Ä¢ CSS ‚Ä¢ JavaScript ‚Ä¢ Java ‚Ä¢ SQL</div>
+    <div class="subtitle" style="font-size:1.1rem;">Proyectos universitarios y personales con buenas pr√°cticas</div>
   </header>
 
   <section class="projects">
     <div class="card" data-aos="zoom-in" data-aos-delay="100">
-      <span class="icon">??</span>
-      <h2>LibrerÌa</h2>
-      <p>App web para gestiÛn de libros y autores.</p>
-      <img src="imagenes/libreria.png" alt="Captura de funcionamiento de la LibrerÌa">
-      <small>TecnologÌas: HTML, CSS, JS</small>
+      <span class="icon">üìñ</span>
+      <h2>Librer√≠a</h2>
+      <p>App web para gesti√≥n de libros y autores.</p>
+      <small>Tecnolog√≠as: HTML, CSS, JS</small>
       <br>
-      <a href="./libreria" target="_blank">Ver cÛdigo</a>
+      <a href="./libreria" target="_blank">Ver c√≥digo</a>
     </div>
     <div class="card" data-aos="zoom-in" data-aos-delay="200">
-      <span class="icon">??</span>
+      <span class="icon">üêæ</span>
       <h2>Mascotas</h2>
-      <p>Registro y consulta de informaciÛn de mascotas con validaciones.</p>
-      <small>TecnologÌas: HTML, CSS, JS</small>
+      <p>Registro y consulta de informaci√≥n de mascotas con validaciones.</p>
+      <small>Tecnolog√≠as: HTML, CSS, JS</small>
       <br>
-      <a href="./mascotas" target="_blank">Ver cÛdigo</a>
+      <a href="./mascotas" target="_blank">Ver c√≥digo</a>
     </div>
     <div class="card" data-aos="zoom-in" data-aos-delay="300">
-      <span class="icon">??</span>
+      <span class="icon">üåê</span>
       <h2>EduWeb</h2>
-      <p>Sitio educativo est·tico con cursos y contacto.</p>
-      <small>TecnologÌas: HTML, CSS, JS</small>
+      <p>Sitio educativo est√°tico con cursos y contacto.</p>
+      <small>Tecnolog√≠as: HTML, CSS, JS</small>
       <br>
-      <a href="./eduweb" target="_blank">Ver cÛdigo</a>
+      <a href="./eduweb" target="_blank">Ver c√≥digo</a>
     </div>
     <div class="card" data-aos="zoom-in" data-aos-delay="400">
-      <span class="icon">???</span>
+      <span class="icon">üóÑÔ∏è</span>
       <h2>Bases de Datos</h2>
       <p>Scripts SQL para diversos modelos: BlockBuster, empresa, colegio, etc.</p>
-      <small>TecnologÌas: SQL</small>
+      <small>Tecnolog√≠as: SQL</small>
       <br>
-      <a href="./proyectos%20bases%20de%20datos" target="_blank">Ver cÛdigo</a>
+      <a href="./proyectos%20bases%20de%20datos" target="_blank">Ver c√≥digo</a>
     </div>
     <div class="card" data-aos="zoom-in" data-aos-delay="500">
-      <span class="icon">?</span>
+      <span class="icon">‚òï</span>
       <h2>Java</h2>
-      <p>Proyectos Java: c·lculo de crÈditos, fechas, etc.</p>
-      <small>TecnologÌas: Java</small>
+      <p>Proyectos Java: c√°lculo de cr√©ditos, fechas, etc.</p>
+      <small>Tecnolog√≠as: Java</small>
       <br>
-      <a href="./proyectos%20programacion" target="_blank">Ver cÛdigo</a>
+      <a href="./proyectos%20programacion" target="_blank">Ver c√≥digo</a>
     </div>
     <div class="card" data-aos="zoom-in" data-aos-delay="600">
-      <span class="icon">???</span>
+      <span class="icon">üóÉÔ∏è</span>
       <h2>SQL (sueltos)</h2>
       <p>Scripts SQL adicionales para practicar consultas y estructuras.</p>
-      <small>TecnologÌas: SQL</small>
+      <small>Tecnolog√≠as: SQL</small>
       <br>
-      <a href="./sql" target="_blank">Ver cÛdigo</a>
+      <a href="./sql" target="_blank">Ver c√≥digo</a>
     </div>
     <div class="card" data-aos="zoom-in" data-aos-delay="700">
-      <span class="icon">??</span>
+      <span class="icon">üè†</span>
       <h2>index.html</h2>
-      <p>P·gina principal de inicio/portada general de los proyectos.</p>
+      <p>P√°gina principal de inicio/portada general de los proyectos.</p>
       <small>HTML</small>
       <br>
       <a href="./index.html" target="_blank">Ver archivo</a>
@@ -101,7 +165,7 @@
     </div>
   </section>
 
-  <!-- Scripts de animaciÛn -->
+  <!-- Scripts de animaci√≥n -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({ duration: 900, once: true });
