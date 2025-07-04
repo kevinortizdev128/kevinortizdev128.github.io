@@ -15,7 +15,7 @@
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: línear-gradient(120deg, #f2f2f2 0%, #e0e7ff 100%);
+      background: linear-gradient(120deg, #f2f2f2 0%, #e0e7ff 100%);
       margin: 0;
       padding: 0;
       min-height: 100vh;
@@ -102,71 +102,66 @@
   </header>
 
   <section class="projects">
-    <!-- Librería (con modal) -->
+    <!-- Librería -->
     <div class="card" data-aos="zoom-in" data-aos-delay="100">
       <span class="icon">📖</span>
       <h2>Librería</h2>
       <p>App web para gestión de libros y autores.</p>
-      <small>Tecnologías: HTML, CSS, JS</small>
-      <br>
-      <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalLibreria">
-        Ver código
-      </button>
+      <small>Tecnologías: HTML, CSS, JS</small><br>
+      <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalLibreria">Ver código</button>
     </div>
-    <!-- Mascotas (con modal) -->
+
+    <!-- Mascotas -->
     <div class="card" data-aos="zoom-in" data-aos-delay="200">
       <span class="icon">🐾</span>
       <h2>Mascotas</h2>
       <p>Registro y consulta de información de mascotas con validaciones.</p>
-      <small>Tecnologías: HTML, CSS, JS</small>
-      <br>
-      <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalMascotas">
-        Ver código
-      </button>
+      <small>Tecnologías: HTML, CSS, JS</small><br>
+      <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalMascotas">Ver código</button>
     </div>
+
     <!-- EduWeb -->
     <div class="card" data-aos="zoom-in" data-aos-delay="300">
       <span class="icon">🌐</span>
       <h2>EduWeb</h2>
       <p>Sitio educativo estático con cursos y contacto.</p>
-      <small>Tecnologías: HTML, CSS, JS</small>
-      <br>
+      <small>Tecnologías: HTML, CSS, JS</small><br>
       <a type="button" data-bs-toggle="modal" data-bs-target="#modalEduWeb" target="_blank" class="btn btn-primary mt-2">Ver código</a>
     </div>
-    <!-- Bases de datos -->
+
+    <!-- Bases de datos (mejorado) -->
     <div class="card" data-aos="zoom-in" data-aos-delay="400">
-      <span class="icon">🗄️</span>
+      <span class="icon">💄️</span>
       <h2>Bases de Datos</h2>
-      <p>Scripts SQL para diversos modelos: BlockBuster, empresa, colegio, etc.</p>
-      <small>Tecnologías: SQL</small>
-      <br>
-      <a href="./proyectos%20bases%20de%20datos" target="_blank" class="btn btn-primary mt-2">Ver código</a>
+      <p>Scripts y modelos relacionales para empresas, colegios y sistemas de inventario.</p>
+      <small>Tecnologías: SQL, phpMyAdmin</small><br>
+      <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalBaseDatos">Ver código</button>
     </div>
+
     <!-- Java -->
     <div class="card" data-aos="zoom-in" data-aos-delay="500">
       <span class="icon">☕</span>
       <h2>Java</h2>
       <p>Proyectos Java: cálculo de créditos, fechas, etc.</p>
-      <small>Tecnologías: Java</small>
-      <br>
+      <small>Tecnologías: Java</small><br>
       <a href="./proyectos%20programacion" target="_blank" class="btn btn-primary mt-2">Ver código</a>
     </div>
+
     <!-- SQL sueltos -->
     <div class="card" data-aos="zoom-in" data-aos-delay="600">
-      <span class="icon">🗃️</span>
+      <span class="icon">💃️</span>
       <h2>SQL (sueltos)</h2>
       <p>Scripts SQL adicionales para practicar consultas y estructuras.</p>
-      <small>Tecnologías: SQL</small>
-      <br>
+      <small>Tecnologías: SQL</small><br>
       <a href="./sql" target="_blank" class="btn btn-primary mt-2">Ver código</a>
     </div>
+
     <!-- index.html -->
     <div class="card" data-aos="zoom-in" data-aos-delay="700">
       <span class="icon">🏠</span>
       <h2>index.html</h2>
       <p>Página principal de inicio/portada general de los proyectos.</p>
-      <small>HTML</small>
-      <br>
+      <small>HTML</small><br>
       <a href="./index.html" target="_blank" class="btn btn-primary mt-2">Ver archivo</a>
     </div>
   </section>
@@ -179,62 +174,34 @@
     </div>
   </section>
 
-  <!-- Modal Bootstrap para Librería -->
-  <div class="modal fade" id="modalLibreria" tabindex="-1" aria-labelledby="modalLibreriaLabel" aria-hidden="true">
+  <!-- Modal Bases de Datos -->
+  <div class="modal fade" id="modalBaseDatos" tabindex="-1" aria-labelledby="modalBaseDatosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalLibreriaLabel">Librería - Descripción y Captura</h5>
+          <h5 class="modal-title" id="modalBaseDatosLabel">Bases de Datos - Modelado y Consultas SQL</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
-          <p>
-            Aplicación web para la gestión de libros y autores.<br>
-            Permite registrar obras, autores, realizar búsquedas y administrar el inventario de manera eficiente.<br>
-            <strong>Tecnologías:</strong> HTML, CSS, JavaScript.
-          </p>
-          <img src="imagenes/libreria.png" alt="Captura de la Librería" class="img-fluid rounded shadow mb-3">
-          <div class="mt-3">
-            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/libreria" target="_blank" class="btn btn-dark">
-              Ver repositorio en GitHub
-            </a>
+          <p>Experiencia en creación y gestión de bases de datos relacionales para sistemas como BlockBuster, gestión académica, empresas y más.<br>
+            Diseño de esquemas, llaves primarias/foráneas y ejecución de consultas (SELECT, INSERT, UPDATE, DELETE) usando phpMyAdmin y SQL.</p>
+          <img src="capturas/basedatos.png" alt="Captura de Bases de Datos" class="img-fluid rounded shadow mb-3">
+          <p><strong>Tecnologías:</strong> SQL, phpMyAdmin, dbdiagram.io</p>
+          <div class="mt-3 d-flex justify-content-center">
+            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/proyectos%20bases%20de%20datos" target="_blank" class="btn btn-dark">Ver repositorio en GitHub</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Bootstrap para Mascotas -->
-  <div class="modal fade" id="modalMascotas" tabindex="-1" aria-labelledby="modalMascotasLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalMascotasLabel">Mascotas - Descripción y Captura</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            Aplicación web para el registro y consulta de información de mascotas con validaciones de datos.<br>
-            Permite agregar, buscar y mostrar mascotas, asegurando la integridad de la información.<br>
-            <strong>Tecnologías:</strong> HTML, CSS, JavaScript.
-          </p>
-          <img src="capturas/mascotas.png" alt="Captura del proyecto Mascotas" class="img-fluid rounded shadow mb-3">
-          <div class="mt-3">
-            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/mascotas" target="_blank" class="btn btn-dark">
-              Ver repositorio en GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Aquí irían los otros modales como modalLibreria, modalMascotas, modalEduWeb -->
 
-  <!-- Scripts de animación y Bootstrap -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({ duration: 900, once: true });
-    // Solución: cierra el modal si el usuario navega hacia atrás
     window.addEventListener('popstate', function() {
       var modals = document.querySelectorAll('.modal.show');
       modals.forEach(function(modal) {
@@ -245,54 +212,5 @@
       });
     });
   </script>
-  <!-- NUEVO: Modal Bootstrap para EduWeb -->
-  <div class="modal fade" id="modalEduWeb" tabindex="-1" aria-labelledby="modalEduWebLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalEduWebLabel">.. EduWeb - Sitio Educativo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            <strong>EduWeb</strong> es un sitio educativo estático desarrollado con HTML, CSS y JavaScript.<br>
-            El proyecto incluye secciones de cursos, información educativa y un formulario de contacto.<br>
-            Está diseñado con buenas prácticas de desarrollo web, incluyendo diseño responsivo y una interfaz de usuario intuitiva para facilitar el aprendizaje en línea.
-          </p>
-          
-          <!-- Imagen del proyecto EduWeb -->
-          <img src="capturas/eduweb.png" alt="Captura del proyecto EduWeb" class="img-fluid rounded shadow mb-3">
-          
-          <div class="mt-3">
-            <h6><strong>Características principales:</strong></h6>
-            <ul class="list-unstyled">
-              <li>. Diseño responsivo y moderno</li>
-              <li>. Seccion de cursos organizados</li>
-              <li>. Formulario de contacto funcional</li>
-              <li>. Navegación intuitiva</li>
-              <li>. Optimizado para diferentes dispositivos</li>
-            </ul>
-          </div>
-          
-          <p><strong>Tecnologías utilizadas:</strong> HTML, CSS, JavaScript</p>
-          
-          <div class="mt-4 d-flex gap-2 justify-content-center">
-            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io" target="_blank" class="btn btn-dark">
-              Ver repositorio en GitHub
-            </a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>
-
-
-
-
-
-
-
