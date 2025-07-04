@@ -41,6 +41,9 @@
       margin: 2rem 0;
     }
     .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background: #fff;
       border-radius: 1.2rem;
       box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
@@ -50,10 +53,6 @@
       cursor: pointer;
       position: relative;
       overflow: hidden;
-
-      /* Cambios para alinear botones */
-      display: flex;
-      flex-direction: column;
     }
     .card:hover {
       transform: scale(1.045) translateY(-4px);
@@ -72,13 +71,6 @@
     @keyframes pulse {
       to { transform: scale(1.07);}
     }
-
-    /* Nuevo estilo para botones "Ver código" */
-    .card button,
-    .card a.btn {
-      margin-top: auto;
-    }
-
     .contact {
       background: #312e81;
       color: #fff;
@@ -96,6 +88,12 @@
     .contact a:hover {
       color: #fff;
       text-decoration: underline;
+    }
+    /* Botones alineados abajo */
+    .card button,
+    .card a.btn {
+      align-self: start;
+      margin-top: auto;
     }
     @media (max-width: 700px) {
       .projects { flex-direction: column; align-items: center; }
