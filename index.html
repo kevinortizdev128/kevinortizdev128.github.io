@@ -31,15 +31,14 @@
       width: 80%;
     } 
      .main-title {
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      text-align: center;    
-      max-width: 90vw;         /* Limita el ancho para que no se desborde */
-      margin: 0 auto;
-      overflow: hidden;        /* Oculta cualquier exceso si llegara a salirse */  
-      text-overflow: ellipsis; /* Agrega "..." si es muy largo (opcional) */	     
-      white-space: nowrap;
-      
-    }
+       font-size: clamp(1.2rem, 4vw, 3rem); /* tamaño adaptable para que no se salga */
+       text-align: center;
+       margin: 0 auto;
+       max-width: 100vw;   /* ancho máximo igual a la ventana */
+      padding: 0 1rem;    /* espacio a los lados para evitar que toque bordes */
+      white-space: nowrap; /* evita salto de línea */
+      overflow-x: auto;    /* agrega scroll horizontal si no cabe */
+   }
 
     .subtitle {
       font-size: 1.3rem;
