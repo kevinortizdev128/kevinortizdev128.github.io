@@ -36,10 +36,12 @@
   margin: 0 auto;
   max-width: 90vw;          /* Limita ancho para que no desborde */
   padding: 0 1rem;          /* Espacio a los lados en pantallas pequeñas */
-  white-space: nowrap;      /* Mantiene todo en una línea */
-  overflow: hidden;         /* Oculta texto que no quepa sin barra */
-  text-overflow: clip;      /* No agrega puntos suspensivos */
+  white-space: normal;      /* Permite salto de línea para que no se corte */
+  overflow-wrap: break-word; /* Permite romper palabras largas */
+  overflow: visible;        /* Muestra todo el texto */
+  text-overflow: initial;   /* No agrega puntos suspensivos */
 }
+
 
     .subtitle {
       font-size: 1.3rem;
