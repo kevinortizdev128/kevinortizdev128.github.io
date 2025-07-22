@@ -31,22 +31,18 @@
       width: 80%;
     }
     .main-title {
-      font-size: clamp(1.5rem, 4vw, 3rem);  /* tamaño adaptativo */
-      text-align: center;
-      margin: 0 auto;
-      max-width: 90vw;
-      padding: 0 1rem;
-      white-space: nowrap;     /* una sola línea */
-      overflow: hidden;        /* oculta si sobra */
-     text-overflow: clip;     /* sin puntos suspensivos */
-   }
+  font-size: clamp(1rem, 3vw, 3rem); /* tamaño adaptable entre 1rem y 3rem */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90vw;   /* un poco de margen a los lados */
+  padding: 0 1rem;
+  white-space: normal; /* permitir que se quiebre en varias líneas si es necesario */
+  overflow: visible;
+  text-overflow: initial;
+}
 
-   /* Ajuste extra para móviles muy pequeños */
-    @media (max-width: 400px) {
-    .main-title {
-    font-size: 1rem;       /* tamaño más pequeño para que quepa */
-       }
-    }
+
+
     .subtitle {
       font-size: 1.3rem;
       margin-bottom: 0.3em;
