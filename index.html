@@ -31,18 +31,22 @@
       width: 80%;
     }
     .main-title {
-  font-size: clamp(1rem, 4vw, 2rem);  /* Tamaño adaptativo */
-  text-align: center;
-  margin: 0 auto;
-  max-width: 90vw;          /* Limita ancho para que no desborde */
-  padding: 0 1rem;          /* Espacio a los lados en pantallas pequeñas */
-  white-space: normal;      /* Permite salto de línea para que no se corte */
-  overflow-wrap: break-word; /* Permite romper palabras largas */
-  overflow: visible;        /* Muestra todo el texto */
-  text-overflow: initial;   /* No agrega puntos suspensivos */
-}
+      font-size: clamp(1.5rem, 4vw, 3rem);  /* tamaño adaptativo */
+      text-align: center;
+      margin: 0 auto;
+      max-width: 90vw;
+      padding: 0 1rem;
+      white-space: nowrap;     /* una sola línea */
+      overflow: hidden;        /* oculta si sobra */
+     text-overflow: clip;     /* sin puntos suspensivos */
+   }
 
-
+   /* Ajuste extra para móviles muy pequeños */
+    @media (max-width: 400px) {
+    .main-title {
+    font-size: 1rem;       /* tamaño más pequeño para que quepa */
+       }
+    }
     .subtitle {
       font-size: 1.3rem;
       margin-bottom: 0.3em;
