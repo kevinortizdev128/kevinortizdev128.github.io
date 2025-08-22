@@ -89,6 +89,7 @@
       color: #fff;
       text-decoration: underline;
     }
+    /* Botones alineados abajo */
     .card button,
     .card a.btn {
       align-self: start;
@@ -184,17 +185,6 @@
       <a href="./index.html" target="_blank" class="btn btn-primary mt-2">Ver archivo</a>
     </div>
 
-    <!-- Catálogo de Tenis -->
-    <div class="card" data-aos="zoom-in" data-aos-delay="800">
-      <span class="icon">👟</span>
-      <h2>Catálogo de Tenis</h2>
-      <p>Proyecto web de catálogo de tenis con imágenes, descripción y selección de productos.</p>
-      <small>Tecnologías: HTML, CSS, JS</small><br>
-      <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalCatalogoTenis">
-        Ver código
-      </button>
-    </div>
-
   </section>
 
   <section class="contact" data-aos="fade-up">
@@ -205,31 +195,157 @@
     </div>
   </section>
 
-  <!-- Modal Catálogo de Tenis -->
-  <div class="modal fade" id="modalCatalogoTenis" tabindex="-1" aria-labelledby="modalCatalogoTenisLabel" aria-hidden="true">
+  <!-- Modal Librería -->
+  <div class="modal fade" id="modalLibreria" tabindex="-1" aria-labelledby="modalLibreriaLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalCatalogoTenisLabel">Catálogo de Tenis - Proyecto Web</h5>
+          <h5 class="modal-title" id="modalLibreriaLabel">Librería - Descripción y Captura</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
           <p>
-            Proyecto web de catálogo de tenis con imágenes, descripción y selección de productos.<br>
-            Incluye un carrito de compras básico y validaciones de selección.<br>
+            Aplicación web para la gestión de libros y autores.<br>
+            Permite registrar obras, autores, realizar búsquedas y administrar el inventario de manera eficiente.<br>
             <strong>Tecnologías:</strong> HTML, CSS, JavaScript.
           </p>
-          <img src="catalogo-tenis/img/tenis1.png" alt="Captura del Catálogo de Tenis" class="img-fluid rounded shadow mb-3" />
-          <div class="mt-3 d-flex justify-content-center">
-            <a href="catalogo-tenis/index.html" target="_blank" class="btn btn-dark">Abrir proyecto</a>
+          <img src="imagenes/libreria.png" alt="Captura de la Librería" class="img-fluid rounded shadow mb-3" />
+          <div class="mt-3">
+            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/libreria" target="_blank" class="btn btn-dark">
+              Ver repositorio en GitHub
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Todos los demás modales (Librería, Mascotas, EduWeb, Bases de Datos, Java, SQL sueltos) -->
-  <!-- ...Aquí puedes copiar los modales que ya tenías del código original -->
+  <!-- Modal Mascotas -->
+  <div class="modal fade" id="modalMascotas" tabindex="-1" aria-labelledby="modalMascotasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMascotasLabel">Mascotas - Descripción y Captura</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Aplicación web para el registro y consulta de información de mascotas con validaciones de datos.<br>
+            Permite agregar, buscar y mostrar mascotas, asegurando la integridad de la información.<br>
+            <strong>Tecnologías:</strong> HTML, CSS, JavaScript.
+          </p>
+          <img src="capturas/mascotas.png" alt="Captura del proyecto Mascotas" class="img-fluid rounded shadow mb-3" />
+          <div class="mt-3">
+            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/mascotas" target="_blank" class="btn btn-dark">
+              Ver repositorio en GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal EduWeb -->
+  <div class="modal fade" id="modalEduWeb" tabindex="-1" aria-labelledby="modalEduWebLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEduWebLabel">EduWeb - Sitio Educativo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            <strong>EduWeb</strong> es un sitio educativo estático desarrollado con HTML, CSS y JavaScript.<br>
+            El proyecto incluye secciones de cursos, información educativa y un formulario de contacto.<br>
+            Está diseñado con buenas prácticas de desarrollo web, incluyendo diseño responsivo y una interfaz de usuario intuitiva para facilitar el aprendizaje en línea.
+          </p>
+          <img src="capturas/eduweb.png" alt="Captura del proyecto EduWeb" class="img-fluid rounded shadow mb-3" />
+          <div class="mt-3">
+            <h6><strong>Características principales:</strong></h6>
+            <ul class="list-unstyled">
+              <li>. Diseño responsivo y moderno</li>
+              <li>. Sección de cursos organizados</li>
+              <li>. Formulario de contacto funcional</li>
+              <li>. Navegación intuitiva</li>
+              <li>. Optimizado para diferentes dispositivos</li>
+            </ul>
+          </div>
+          <p><strong>Tecnologías utilizadas:</strong> HTML, CSS, JavaScript</p>
+          <div class="mt-4 d-flex gap-2 justify-content-center">
+            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/eduweb" target="_blank" class="btn btn-dark">
+ 		 Ver repositorio en GitHub
+		</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Bases de Datos -->
+  <div class="modal fade" id="modalBaseDatos" tabindex="-1" aria-labelledby="modalBaseDatosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalBaseDatosLabel">Bases de Datos - Modelado y Consultas SQL</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Experiencia en creación y gestión de bases de datos relacionales para sistemas como BlockBuster, gestión académica, empresas y más.<br>
+            Diseño de esquemas, llaves primarias/foráneas y ejecución de consultas (SELECT, INSERT, UPDATE, DELETE) usando phpMyAdmin y SQL.
+          </p>
+          <p><strong>Tecnologías:</strong> SQL, phpMyAdmin, dbdiagram.io</p>
+          <div class="mt-3 d-flex justify-content-center">
+            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/proyectos%20bases%20de%20datos" target="_blank" class="btn btn-dark">Ver repositorio en GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Java -->
+  <div class="modal fade" id="modalJava" tabindex="-1" aria-labelledby="modalJavaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalJavaLabel">Proyectos en Java</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Proyectos desarrollados en Java que incluyen cálculos de créditos académicos, manejo de fechas, y otros algoritmos prácticos.<br>
+            Estos proyectos demuestran aplicación de lógica, estructuras de control y buenas prácticas en programación orientada a objetos.
+          </p>
+          <p><strong>Tecnologías:</strong> Java</p>
+          <div class="mt-3 d-flex justify-content-center">
+            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/proyectos%20programacion" target="_blank" class="btn btn-dark">Ver repositorio en GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal SQL Sueltos -->
+  <div class="modal fade" id="modalSQLSueltos" tabindex="-1" aria-labelledby="modalSQLSueltosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSQLSueltosLabel">SQL (sueltos) - Scripts y Consultas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Colección de scripts SQL para practicar consultas, estructuras y manipulación de datos.<br>
+            Incluye ejercicios adicionales para fortalecer habilidades en bases de datos.
+          </p>
+          <p><strong>Tecnologías:</strong> SQL</p>
+          <div class="mt-3 d-flex justify-content-center">
+            <a href="https://github.com/kevinortizdev128/kevinortizdev128.github.io/tree/main/sql" target="_blank" class="btn btn-dark">Ver repositorio en GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts Bootstrap y AOS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
