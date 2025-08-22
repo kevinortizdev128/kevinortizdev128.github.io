@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Tenis Deportivos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <header>
+    <h1>Catálogo de Tenis</h1>
+    <p>Explora los mejores modelos de Nike, Adidas, Puma y más</p>
+  </header>
+
+  <main class="catalogo">
+    <!-- Productos -->
+    <div class="producto" data-nombre="Nike Air Max 270" data-precio="65000">
+      <img src="img/nike_air_max_270.webp.webp" alt="Nike Air Max 270">
+      <h2>Nike Air Max 270</h2>
+      <p class="marca">Nike</p>
+      <p class="precio">₡65,000</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto" data-nombre="Nike Revolution 7" data-precio="45000">
+      <img src="img/nike_revolution_7.webp" alt="Nike Revolution 7">
+      <h2>Nike Revolution 7</h2>
+      <p class="marca">Nike</p>
+      <p class="precio">₡45,000</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto" data-nombre="Adidas Ultraboost 22" data-precio="72000">
+      <img src="img/adidas.webp" alt="Adidas Ultraboost">
+      <h2>Adidas Ultraboost 22</h2>
+      <p class="marca">Adidas</p>
+      <p class="precio">₡72,000</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto" data-nombre="Adidas Garçon Runfalcon" data-precio="40000">
+      <img src="img/adidas_garcon.webp" alt="adidas Garçon Runfalcon 3.0k Baskets">
+      <h2>Adidas Garçon Runfalcon</h2>
+      <p class="marca">Adidas</p>
+      <p class="precio">₡40,000</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto" data-nombre="Puma Softride Harmony" data-precio="58000">
+      <img src="img/puma-harmony.webp" alt="Puma Softride Harmony">
+      <h2>Puma Softride Harmony</h2>
+      <p class="marca">Puma</p>
+      <p class="precio">₡58,000</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto" data-nombre="Puma Flyer Runner" data-precio="42000">
+      <img src="img/puma flyyer runner.webp" alt="Puma Flyer Runner">
+      <h2>Puma Flyer Runner</h2>
+      <p class="marca">Puma</p>
+      <p class="precio">₡42,000</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto" data-nombre="Reebook city ride" data-precio="66500">
+      <img src="img/Reebook city ride.webp" alt="Reebook city ride">
+      <h2>Reebook city ride</h2>
+      <p class="marca">Reebok</p>
+      <p class="precio">₡66,500</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto" data-nombre="New Balance Men's Roav v1" data-precio="60000">
+      <img src="img/New balance.webp" alt="New Balance Men's Roav v1">
+      <h2>New Balance Men's Roav v1</h2>
+      <p class="marca">New Balance</p>
+      <p class="precio">₡60,000</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Catálogo de Tenis | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Ventana modal -->
+  <div id="modalCompra" class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloModal">
+    <div class="modal-content">
+      <span class="cerrar" id="btnCerrar" tabindex="0" role="button" aria-label="Cerrar ventana">&times;</span>
+      <img id="imgProducto" src="" alt="Imagen del producto" />
+      <h2 id="tituloModal">Completa tu compra</h2>
+      <form id="formCompra">
+        <p><strong>Producto:</strong> <span id="nombreProducto"></span></p>
+        <p><strong>Precio unitario:</strong> ₡<span id="precioProducto"></span></p>
+
+        <div class="fila-formulario">
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" value="1" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="nombreCliente">Nombre completo:</label>
+          <input type="text" id="nombreCliente" name="nombreCliente" placeholder="Tu nombre" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="emailCliente">Correo electrónico:</label>
+          <input type="email" id="emailCliente" name="emailCliente" placeholder="ejemplo@correo.com" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="direccionCliente">Dirección de entrega:</label>
+          <input type="text" id="direccionCliente" name="direccionCliente" placeholder="Dirección completa" required />
+        </div>
+
+        <button type="submit">Confirmar compra</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="compra.js"></script>
+</body>
+</html>
